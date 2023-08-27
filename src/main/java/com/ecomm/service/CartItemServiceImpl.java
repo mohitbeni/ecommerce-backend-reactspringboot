@@ -42,7 +42,7 @@ public class CartItemServiceImpl implements CartItemService{
 
         if(user.getId().equals(userId)){
             item.setQuantity(cartItem.getQuantity());
-            item.setPrice(item.getQuantity()*item.getProduct().getQuantity());
+            item.setPrice(item.getQuantity()*item.getProduct().getPrice());
             item.setDiscountedPrice(item.getProduct().getDiscountedPrice()*item.getQuantity());
         }
 

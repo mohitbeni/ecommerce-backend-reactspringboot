@@ -1,4 +1,4 @@
-FROM openjdk:17               # FROM<image>
+FROM FROM openjdk:17-jdk-slim-buster
 VOLUME /app                   # Temporary location to run
 EXPOSE 5454                   # Provide port number
 ADD target/ecommerce-site-0.0.1-SNAPSHOT.jar
